@@ -1,19 +1,17 @@
 # NumPy MLP for MNIST
 
-本科阶段深度学习实践项目：使用纯 NumPy 从零实现多层感知机（MLP），完成 MNIST 手写数字分类。
-项目不依赖 PyTorch、TensorFlow 或 scikit-learn 的模型与数据处理接口。
+深度学习实践微项目：使用纯 NumPy 从零实现多层感知机（MLP），完成 MNIST 手写数字分类。
+项目不依赖 PyTorch、TensorFlow 或 scikit-learn 的模型与数据处理接口，只使用numpy手动实现所有核心功能。
 
-## 项目亮点
-
-- 手写 He/Xavier 参数初始化、ReLU、稳定 Softmax 和交叉熵损失
-- 手写逐层反向传播与 mini-batch SGD 参数更新
+- He/Xavier 参数初始化、ReLU、稳定 Softmax 和交叉熵损失
+- 逐层反向传播与 mini-batch SGD 参数更新
 - 使用中心差分法进行数值梯度检验
 - 包含 MNIST 下载、预处理、训练、验证、混淆矩阵和训练曲线
 - 使用类型标注、命令行参数和单元测试组织代码
 
 ## 网络结构
 
-```text
+```
 784 → 256 → 128 → 10
 ```
 
@@ -62,10 +60,7 @@ python -m pytest tests -q
 
 | 指标 | 结果 |
 | --- | --- |
-| 测试集准确率 | 待实测 |
+| 测试集准确率 | 97.05% |
 | 网络结构 | 784-256-128-10 |
 | 优化器 | Mini-batch SGD |
 
-## 说明
-
-本项目用于展示 NumPy 深度学习基础实现能力。模型参数、训练输出和本地虚拟环境不应提交到 GitHub。
