@@ -56,7 +56,7 @@ python -m pytest tests -q
 
 ## 实验结果
 
-请在完成一次完整 MNIST 训练后填写实际结果：
+实际数据实验结果：
 
 | 指标 | 结果 |
 | --- | --- |
@@ -64,3 +64,4 @@ python -m pytest tests -q
 | 网络结构 | 784-256-128-10 |
 | 优化器 | Mini-batch SGD |
 
+训练数据来源：https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
