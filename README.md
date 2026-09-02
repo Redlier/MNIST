@@ -65,3 +65,4 @@ python -m pytest tests -q
 | 优化器 | Mini-batch SGD |
 
 训练数据来源：https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
+训练曲线截图：training_curves.png
