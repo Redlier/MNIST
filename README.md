@@ -40,7 +40,7 @@ python download_data.py
 python train.py --epochs 10 --batch-size 128 --learning-rate 0.05
 ```
 
-训练曲线会保存到 `outputs/training_curves.png`。数据文件和训练输出已加入 `.gitignore`，不会提交到仓库。
+训练曲线会保存到 `training_curves.png`。数据文件和训练输出已加入 `.gitignore`，不会提交到仓库。
 
 运行测试：
 
@@ -67,3 +67,4 @@ python -m pytest tests -q
 训练数据来源：https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz
 
 训练曲线截图：training_curves.png
+![训练曲线](training_curves.png)
